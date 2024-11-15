@@ -116,7 +116,7 @@ const SearchBar = ({ courses, onCourseSelect, plannedCourses}) => {
     return(
     <div className="vertical-stack-container">
         <div style = {{display: "flex", flexDirection: "row", justifyContent: "space-between", width: "100%"}}>
-            <div className="box" style={{ display: 'flex', alignItems: 'flex-start', width: '100%',}}>
+            <div className="box" style={{ display: 'flex', alignItems: 'flex-start', width: '100%', padding: '0px'}}>
 
                 <div style={{ flex: '0 1 300px', paddingRight: '20px' }}>
                 {tabs()}
