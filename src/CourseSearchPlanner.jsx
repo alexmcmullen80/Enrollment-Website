@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import SearchBar from './SearchBar';
-import Filters from './Filters';
 import courses from './courses.js';
 import CourseTablePlanner from './CourseTablePlanner';
 import YearSelect from './YearSelect.jsx';
 import { Link } from 'react-router-dom';
 
 const CourseSearchPlanner = () => {
-    const [selectedFilter, setSelectedFilter] = useState('all'); 
-    const [selectedCourse, setSelectedCourse] = useState(null); 
+    const [selectedFilter, setSelectedFilter] = useState('all');
+    const [selectedCourse, setSelectedCourse] = useState(null);
     const [plannedCourses, setplannedCourses] = useState([]);
     const [currentYear, setCurrentYear] = useState(1);
     const [allYears, setAllYears] = useState(false);
@@ -16,15 +15,15 @@ const CourseSearchPlanner = () => {
     const [selectedYear, setSelectedYear] = useState(1);
 
     //filter the courses based on the selected filter
-    const filteredCourses = selectedFilter === 'all' 
-        ? courses 
+    const filteredCourses = selectedFilter === 'all'
+        ? courses
         : courses.filter(course => course.filter === selectedFilter);
 
     const onCourseSelect = (course) => {
         setSelectedCourse(course); //use to display course information
     };
 
-    
+
     const handleAddCourseToTable = () => {
         if (selectedCourse && !plannedCourses.some(course => course.code === selectedCourse.code)) {
             selectedCourse.year = selectedYear
@@ -42,14 +41,14 @@ const CourseSearchPlanner = () => {
 
     return (
         <>
-            <div className="box" style={{ display: 'flex', alignItems: 'flex-start', width: '100%',  
+            <div className="box" style={{ display: 'flex', alignItems: 'flex-start', width: '100%',
                 }}>
-                <div style={{ flex: '0 1 300px', paddingRight: '20px' }}>
-                    <Filters selectedFilter={selectedFilter} setSelectedFilter={setSelectedFilter} courses={filteredCourses} />
-                    <SearchBar 
-                    courses={filteredCourses} 
+                <div style={{ flex: '0 1 300px'}}>
+                    <SearchBar
+                    courses={filteredCourses}
                     onCourseSelect={onCourseSelect}
-                    years={years} />
+                    years={years}
+                    plannedCourses={plannedCourses} />
                 </div>
 
                 {selectedCourse && (

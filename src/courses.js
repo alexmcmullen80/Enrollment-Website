@@ -134,7 +134,7 @@ const courses  = [
     },
     {
         name: 'Music Therapy',
-        code: 'Music 2MT3',
+        code: 'MUSIC 2MT3',
         description: 'An introduction to the practice of music therapy, with an emphasis on the diversity of music therapy applications such as: bio-medical, psychoanalytical, behavioural and rehabilitation. Three hours (lecture, web module); one term',
         prerequisites: 'Registration in Level II or above',
         antirequisites: 'None',
