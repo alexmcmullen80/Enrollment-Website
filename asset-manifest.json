@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Enrollment-Website/static/css/main.a1bfe0ed.css",
-    "main.js": "/Enrollment-Website/static/js/main.5947b822.js",
+    "main.css": "/Enrollment-Website/static/css/main.d9299e7d.css",
+    "main.js": "/Enrollment-Website/static/js/main.ea109264.js",
     "static/js/453.4207390b.chunk.js": "/Enrollment-Website/static/js/453.4207390b.chunk.js",
     "static/media/search.png": "/Enrollment-Website/static/media/search.c6544d3156a8bde3d076.png",
     "static/media/delete.png": "/Enrollment-Website/static/media/delete.c4e35861d2606e76ed78.png",
     "index.html": "/Enrollment-Website/index.html",
-    "main.a1bfe0ed.css.map": "/Enrollment-Website/static/css/main.a1bfe0ed.css.map",
-    "main.5947b822.js.map": "/Enrollment-Website/static/js/main.5947b822.js.map",
+    "main.d9299e7d.css.map": "/Enrollment-Website/static/css/main.d9299e7d.css.map",
+    "main.ea109264.js.map": "/Enrollment-Website/static/js/main.ea109264.js.map",
     "453.4207390b.chunk.js.map": "/Enrollment-Website/static/js/453.4207390b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1bfe0ed.css",
-    "static/js/main.5947b822.js"
+    "static/css/main.d9299e7d.css",
+    "static/js/main.ea109264.js"
   ]
 }
